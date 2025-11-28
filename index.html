@@ -1,0 +1,292 @@
+    <style>
+        /* --- CONFIGURACIÓN DE COLORES Y ESTILOS --- */
+        :root {
+            --bg-color: #0a0a0a;       /* Negro fondo casi puro */
+            --card-bg: #111111;        /* Fondo de tarjetas */
+            --accent-color: #00ff41;   /* Verde Hacker/Matrix */
+            --text-main: #e0e0e0;      /* Blanco suave */
+            --text-secondary: #a0a0a0; /* Gris para textos secundarios */
+            --font-main: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            --font-code: 'Courier New', Courier, monospace;
+        }
+
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            background-color: var(--bg-color);
+            color: var(--text-main);
+            font-family: var(--font-main);
+            line-height: 1.6;
+            overflow-x: hidden;
+        }
+
+        /* --- HEADER --- */
+        header {
+            padding: 2rem 5%;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            border-bottom: 1px solid #333;
+        }
+
+        .logo {
+            display: flex;
+            align-items: center;
+            font-family: var(--font-code);
+            font-size: 1.5rem;
+            font-weight: bold;
+            color: var(--accent-color);
+            text-transform: uppercase;
+            letter-spacing: 2px;
+        }
+        
+        .logo img {
+            height: 40px; /* Altura del logo */
+            margin-right: 15px; /* Espacio entre el logo y el texto */
+        }
+
+        .social-link {
+            color: var(--text-main);
+            text-decoration: none;
+            margin-left: 20px;
+            font-size: 0.9rem;
+            transition: color 0.3s;
+        }
+
+        .social-link:hover {
+            color: var(--accent-color);
+        }
+
+        /* --- HERO SECTION --- */
+        .hero {
+            text-align: center;
+            padding: 5rem 1rem;
+            max-width: 800px;
+            margin: 0 auto;
+        }
+
+        .hero h1 {
+            font-size: 3rem;
+            margin-bottom: 1rem;
+        }
+
+        .hero h1 span {
+            color: var(--accent-color);
+        }
+
+        .hero p {
+            color: var(--text-secondary);
+            font-size: 1.2rem;
+            margin-bottom: 2rem;
+        }
+
+        .btn {
+            display: inline-block;
+            padding: 10px 25px;
+            border: 1px solid var(--accent-color);
+            color: var(--accent-color);
+            text-decoration: none;
+            font-family: var(--font-code);
+            font-weight: bold;
+            transition: all 0.3s ease;
+            text-transform: uppercase;
+        }
+
+        .btn:hover {
+            background-color: var(--accent-color);
+            color: var(--bg-color);
+            box-shadow: 0 0 15px var(--accent-color);
+        }
+
+        /* --- PROYECTOS (GRID) --- */
+        .projects-section {
+            padding: 4rem 5%;
+            max-width: 1200px;
+            margin: 0 auto;
+        }
+
+        .section-title {
+            text-align: center;
+            font-family: var(--font-code);
+            color: var(--accent-color);
+            margin-bottom: 3rem;
+            font-size: 1.8rem;
+            position: relative;
+        }
+
+        .projects-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+            gap: 2rem;
+        }
+
+        .project-card {
+            background-color: var(--card-bg);
+            border: 1px solid #333;
+            padding: 2rem;
+            border-radius: 8px;
+            transition: transform 0.3s, border-color 0.3s;
+            position: relative;
+            overflow: hidden;
+            display: flex; /* Para centrar el contenido */
+            flex-direction: column;
+            align-items: center; /* Centrar horizontalmente */
+            text-align: center; /* Centrar texto */
+        }
+
+        .project-card:hover {
+            transform: translateY(-5px);
+            border-color: var(--accent-color);
+        }
+
+        .project-card::before {
+            content: '';
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 3px;
+            background: var(--accent-color);
+            transform: scaleX(0);
+            transform-origin: left;
+            transition: transform 0.3s;
+        }
+
+        .project-card:hover::before {
+            transform: scaleX(1);
+        }
+
+        .project-card a {
+            text-decoration: none;
+            color: inherit;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            height: 100%;
+            width: 100%;
+        }
+
+        .card-icon {
+            width: 80px; /* Tamaño más grande para el icono */
+            height: 80px;
+            margin-bottom: 1rem;
+            object-fit: contain; /* Para que los iconos no se deformen */
+        }
+
+        .project-title {
+            font-size: 1.4rem;
+            margin-bottom: 0.5rem; /* Menos espacio */
+            color: #fff;
+        }
+
+        .project-desc {
+            color: var(--text-secondary);
+            font-size: 0.95rem;
+            margin-bottom: 1rem; /* Menos espacio */
+            height: auto; /* Ya no es necesario fijar la altura, el texto es de 1 frase */
+            overflow: visible;
+        }
+
+
+        /* --- FOOTER --- */
+        footer {
+            text-align: center;
+            padding: 3rem 1rem;
+            color: var(--text-secondary);
+            font-size: 0.8rem;
+            border-top: 1px solid #333;
+            margin-top: 4rem;
+        }
+
+        /* Responsive */
+        @media (max-width: 768px) {
+            .hero h1 { font-size: 2rem; }
+            .projects-grid { grid-template-columns: 1fr; }
+        }
+    </style>
+</head>
+<body>
+
+    <header>
+        <div class="logo">
+            <img src="assets/images/anabasasoft-logo.png" alt="AnabasaSoft Logo">
+            &lt;AnabasaSoft /&gt;
+        </div>
+        <nav>
+            <a href="https://github.com/AnabasaSoft" class="social-link">GitHub Profile</a>
+        </nav>
+    </header>
+
+    <section class="hero">
+        <h1>Bienvenido al <br><span>Mundo de AnabasaSoft</span></h1>
+        <p>Desarrollo de software, innovación y código limpio. Explora mis últimas aplicaciones y proyectos open source.</p>
+        <a href="#projects" class="btn">Ver Proyectos</a>
+    </section>
+
+    <section id="projects" class="projects-section">
+        <h2 class="section-title">/// APLICACIONES DESTACADAS</h2>
+
+        <div class="projects-grid">
+
+            <article class="project-card">
+                <a href="apps/sentinelx-details.html">
+                    <img src="assets/images/sentinelx-icon.png" alt="Icono de SentinelX" class="card-icon">
+                    <h3 class="project-title">SentinelX</h3>
+                    <p class="project-desc">Suite de seguridad para Linux con Firewall Inteligente y Antivirus en Tiempo Real.</p>
+                </a>
+            </article>
+
+            <article class="project-card">
+                <a href="apps/visagevault-details.html">
+                    <img src="assets/images/visagevault-icon.png" alt="Icono de VisageVault" class="card-icon">
+                    <h3 class="project-title">VisageVault</h3>
+                    <p class="project-desc">Gestor de fotos y vídeos con IA para organizar y clasificar tus recuerdos de forma inteligente.</p>
+                </a>
+            </article>
+
+            <article class="project-card">
+                <a href="apps/portaldrop-details.html">
+                    <img src="assets/images/portaldrop-icon.png" alt="Icono de PortalDrop" class="card-icon">
+                    <h3 class="project-title">PortalDrop</h3>
+                    <p class="project-desc">El "AirDrop" universal para Linux para transferir archivos entre tu PC y cualquier dispositivo móvil.</p>
+                </a>
+            </article>
+
+            <article class="project-card">
+                <a href="apps/signandseal-details.html">
+                    <img src="assets/images/signandseal-icon.png" alt="Icono de Sign & Seal" class="card-icon">
+                    <h3 class="project-title">Sign & Seal</h3>
+                    <p class="project-desc">Herramienta para firmar PDFs en Linux de forma rápida y visual, sin suites de ofimática pesadas.</p>
+                </a>
+            </article>
+
+            <article class="project-card">
+                <a href="apps/terminalia-details.html">
+                    <img src="assets/images/generic-cli-icon.png" alt="Icono de terminal-ia" class="card-icon">
+                    <h3 class="project-title">terminal-ia</h3>
+                    <p class="project-desc">Un shell interactivo en Go que convierte lenguaje natural en comandos de terminal usando IA.</p>
+                </a>
+            </article>
+            
+            <article class="project-card">
+                <a href="apps/ollama-cli-details.html">
+                    <img src="assets/images/generic-cli-icon.png" alt="Icono de ollama-cli" class="card-icon">
+                    <h3 class="project-title">ollama-cli</h3>
+                    <p class="project-desc">Una herramienta de línea de comandos para interactuar con los modelos de Ollama de forma sencilla.</p>
+                </a>
+            </article>
+
+        </div>
+    </section>
+
+    <footer>
+        <p>© 2024 AnabasaSoft. Code is Law.</p>
+    </footer>
+
+</body>
+</html>
+
