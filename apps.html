@@ -1,0 +1,194 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Aplicaciones - AnabasaSoft</title>
+    <link rel="icon" href="assets/images/anabasasoft-logo.png" type="image/png">
+    <style>
+        :root {
+            --bg: #04070a;
+            --card-bg: #0b0f14;
+            --accent: #00ff9d;
+            --text: #d5ffe9;
+            --highlight: #0affc6;
+            --gradient: linear-gradient(135deg, #00ff9d 0%, #00d0ff 100%);
+        }
+        * { box-sizing: border-box; }
+        body {
+            margin: 0;
+            font-family: "Inter", Arial, sans-serif;
+            background: var(--bg);
+            color: var(--text);
+            letter-spacing: 0.5px;
+        }
+        header {
+            padding: 20px 40px;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            background: rgba(0, 0, 0, 0.45);
+            backdrop-filter: blur(10px);
+            border-bottom: 1px solid rgba(0, 255, 157, 0.2);
+            position: sticky;
+            top: 0;
+            z-index: 20;
+        }
+        header .logo-container {
+            display: flex;
+            align-items: center;
+            gap: 15px;
+        }
+        header .logo-container img {
+            height: 40px;
+        }
+        header h1 {
+            background: var(--gradient);
+            -webkit-background-clip: text;
+            color: transparent;
+            font-size: 1.8rem;
+            margin: 0;
+            font-weight: 700;
+        }
+        nav a {
+            margin-left: 20px;
+            color: var(--text);
+            text-decoration: none;
+            font-weight: 500;
+            transition: 0.3s;
+        }
+        nav a:hover {
+            color: var(--accent);
+        }
+
+        .apps-container {
+            padding: 40px 20px;
+        }
+
+        .apps-container h2 {
+            font-size: 2.5rem;
+            margin-bottom: 30px;
+            text-align: center;
+            background: var(--gradient);
+            -webkit-background-clip: text;
+            color: transparent;
+        }
+
+        .apps {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+            gap: 30px;
+            max-width: 1400px;
+            margin: 0 auto;
+        }
+        .card {
+            background: var(--card-bg);
+            padding: 25px;
+            border-radius: 15px;
+            border: 1px solid rgba(0, 255, 157, 0.15);
+            box-shadow: 0 0 20px rgba(0, 255, 157, 0.08);
+            transition: 0.3s;
+            text-align: center;
+        }
+        .card:hover {
+            transform: translateY(-5px);
+            border-color: var(--accent);
+            box-shadow: 0 0 30px rgba(0, 255, 157, 0.25);
+        }
+        .card a {
+            text-decoration: none;
+            color: inherit;
+        }
+        .card img {
+            width: 80px;
+            height: 80px;
+            margin-bottom: 1rem;
+            object-fit: contain;
+        }
+        .card h3 {
+            margin-top: 0;
+            color: var(--highlight);
+            font-size: 1.5rem;
+        }
+        .card p {
+            font-size: 1rem;
+            opacity: 0.8;
+            min-height: 50px;
+        }
+
+        footer {
+            text-align: center;
+            padding: 30px;
+            opacity: 0.7;
+            font-size: 0.9rem;
+            border-top: 1px solid rgba(0, 255, 157, 0.15);
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <div class="logo-container">
+            <img src="assets/images/anabasasoft-logo.png" alt="AnabasaSoft Logo">
+            <h1>AnabasaSoft</h1>
+        </div>
+        <nav>
+            <a href="index.html">Inicio</a>
+            <a href="apps.html">Aplicaciones</a>
+            <a href="about.html">Nosotros</a>
+            <a href="https://github.com/AnabasaSoft" target="_blank">GitHub</a>
+        </nav>
+    </header>
+
+    <div class="apps-container">
+        <h2>Nuestras Aplicaciones</h2>
+        <section id="apps" class="apps">
+            <div class="card">
+                <a href="apps/sentinelx-details.html">
+                    <img src="assets/images/sentinelx-icon.png" alt="Icono de SentinelX">
+                    <h3>SentinelX</h3>
+                    <p>Suite de seguridad para Linux con Firewall Inteligente y Antivirus en Tiempo Real.</p>
+                </a>
+            </div>
+            <div class="card">
+                <a href="apps/visagevault-details.html">
+                    <img src="assets/images/visagevault-icon.png" alt="Icono de VisageVault">
+                    <h3>VisageVault</h3>
+                    <p>Gestor de fotos y vídeos con IA para organizar y clasificar tus recuerdos de forma inteligente.</p>
+                </a>
+            </div>
+            <div class="card">
+                <a href="apps/portaldrop-details.html">
+                    <img src="assets/images/portaldrop-icon.png" alt="Icono de PortalDrop">
+                    <h3>PortalDrop</h3>
+                    <p>El "AirDrop" universal para transferir archivos entre tu PC y cualquier dispositivo móvil.</p>
+                </a>
+            </div>
+            <div class="card">
+                <a href="apps/signandseal-details.html">
+                    <img src="assets/images/signandseal-icon.png" alt="Icono de Sign & Seal">
+                    <h3>Sign & Seal</h3>
+                    <p>Herramienta para firmar PDFs de forma rápida y visual, sin suites de ofimática pesadas.</p>
+                </a>
+            </div>
+            <div class="card">
+                <a href="apps/terminalia-details.html">
+                    <img src="assets/images/generic-cli-icon.png" alt="Icono de terminal-ia">
+                    <h3>terminal-ia</h3>
+                    <p>Un shell interactivo que convierte lenguaje natural en comandos de terminal usando IA.</p>
+                </a>
+            </div>
+            <div class="card">
+                <a href="apps/ollama-cli-details.html">
+                    <img src="assets/images/generic-cli-icon.png" alt="Icono de ollama-cli">
+                    <h3>ollama-cli</h3>
+                    <p>Una herramienta de línea de comandos para interactuar con los modelos de Ollama de forma sencilla.</p>
+                </a>
+            </div>
+        </section>
+    </div>
+
+    <footer>
+        © 2025 AnabasaSoft — Code is Law.
+    </footer>
+</body>
+</html>

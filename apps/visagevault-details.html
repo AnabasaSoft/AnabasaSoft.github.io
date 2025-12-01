@@ -1,48 +1,148 @@
-
 <!DOCTYPE html>
 <html lang="es">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>VisageVault - AnabasaSoft</title>
     <style>
         :root {
-            --bg-color: #0a0a0a;
-            --accent-color: #00ff41;
-            --text-main: #e0e0e0;
+            --bg: #04070a;
+            --card-bg: #0b0f14;
+            --accent: #00ff9d;
+            --text: #d5ffe9;
+            --highlight: #0affc6;
+            --gradient: linear-gradient(135deg, #00ff9d 0%, #00d0ff 100%);
         }
-        body { font-family: sans-serif; margin: 0; background-color: var(--bg-color); color: var(--text-main); }
-        header { padding: 2rem 5%; display: flex; justify-content: space-between; align-items: center; border-bottom: 1px solid #333; }
-        .logo { display: flex; align-items: center; font-family: 'Courier New', Courier, monospace; font-size: 1.5rem; font-weight: bold; color: var(--accent-color); text-transform: uppercase; letter-spacing: 2px; }
-        .logo img { height: 40px; margin-right: 15px; }
-        .social-link { color: var(--text-main); text-decoration: none; margin-left: 20px; font-size: 0.9rem; transition: color 0.3s; }
-        .social-link:hover { color: var(--accent-color); }
-        .container { max-width: 800px; margin: 2em auto; background: #111111; padding: 2em; border-radius: 8px; box-shadow: 0 0 15px rgba(0,255,65,0.3); }
-        h1 { color: var(--accent-color); margin-bottom: 1rem; }
-        h2 { color: var(--accent-color); border-bottom: 1px solid var(--accent-color); padding-bottom: 0.5rem; margin-top: 2rem; margin-bottom: 1rem; }
-        .app-icon { display: block; margin: 0 auto 1.5rem auto; width: 100px; height: 100px; object-fit: contain; }
-        .screenshot { max-width: 100%; margin-bottom: 1em; border-radius: 8px; border: 1px solid #333; }
-        .links a { margin-right: 15px; color: var(--accent-color); text-decoration: none; transition: color 0.3s; }
-        .links a:hover { color: #70ff99; }
-        p, ul { margin-bottom: 1em; }
-        ul { list-style-type: disc; margin-left: 20px; }
-        .back-link { display: inline-block; margin-top: 2em; color: #e0e0e0; text-decoration: none; border: 1px solid #e0e0e0; padding: 0.5em 1em; border-radius: 5px; transition: background-color 0.3s, color 0.3s; }
-        .back-link:hover { background-color: var(--accent-color); color: var(--bg-color); }
+        * { box-sizing: border-box; }
+        body {
+            margin: 0;
+            font-family: "Inter", Arial, sans-serif;
+            background: var(--bg);
+            color: var(--text);
+            letter-spacing: 0.5px;
+        }
+        header {
+            padding: 20px 40px;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            background: rgba(0, 0, 0, 0.45);
+            backdrop-filter: blur(10px);
+            border-bottom: 1px solid rgba(0, 255, 157, 0.2);
+            position: sticky;
+            top: 0;
+            z-index: 20;
+        }
+        header .logo-container {
+            display: flex;
+            align-items: center;
+            gap: 15px;
+        }
+        header .logo-container img {
+            height: 40px;
+        }
+        header h1 {
+            background: var(--gradient);
+            -webkit-background-clip: text;
+            color: transparent;
+            font-size: 1.8rem;
+            margin: 0;
+            font-weight: 700;
+        }
+        nav a {
+            margin-left: 20px;
+            color: var(--text);
+            text-decoration: none;
+            font-weight: 500;
+            transition: 0.3s;
+        }
+        nav a:hover {
+            color: var(--accent);
+        }
+        .app-details {
+            max-width: 900px;
+            margin: 60px auto;
+            padding: 40px;
+            background: var(--card-bg);
+            border-radius: 15px;
+            border: 1px solid rgba(0, 255, 157, 0.15);
+        }
+        .app-details h1 {
+            background: var(--gradient);
+            -webkit-background-clip: text;
+            color: transparent;
+            font-size: 2.5rem;
+            margin-bottom: 1rem;
+        }
+        .app-details h2 {
+            color: var(--highlight);
+            border-bottom: 1px solid var(--accent);
+            padding-bottom: 0.5rem;
+            margin-top: 2rem;
+            margin-bottom: 1rem;
+        }
+        .app-icon {
+            display: block;
+            margin: 0 auto 1.5rem auto;
+            width: 120px;
+            height: 120px;
+            object-fit: contain;
+            border-radius: 20px;
+        }
+        .screenshot {
+            max-width: 100%;
+            margin-bottom: 1em;
+            border-radius: 8px;
+            border: 1px solid rgba(0, 255, 157, 0.2);
+        }
+        .links a {
+            margin-right: 15px;
+            color: var(--accent);
+            text-decoration: none;
+            font-weight: 600;
+            transition: color 0.3s;
+        }
+        .links a:hover { color: var(--highlight); }
+        ul { line-height: 1.8; }
+        .back-link {
+            display: inline-block;
+            margin-top: 2em;
+            color: var(--text);
+            text-decoration: none;
+            border: 1px solid var(--text);
+            padding: 0.7em 1.2em;
+            border-radius: 5px;
+            transition: background-color 0.3s, color 0.3s, border-color 0.3s;
+        }
+        .back-link:hover {
+            background-color: var(--accent);
+            color: var(--bg);
+            border-color: var(--accent);
+        }
+        footer {
+            text-align: center;
+            padding: 30px;
+            opacity: 0.7;
+            font-size: 0.9rem;
+            border-top: 1px solid rgba(0, 255, 157, 0.15);
+        }
     </style>
 </head>
 <body>
-
     <header>
-        <div class="logo">
-            <img src="../assets/images/anabasasoft-logo.png" alt="AnabasaSoft Logo">
-            &lt;AnabasaSoft /&gt;
+        <div class="logo-container">
+            <a href="../index.html" style="display: flex; align-items: center; text-decoration: none;">
+                <img src="../assets/images/anabasasoft-logo.png" alt="AnabasaSoft Logo">
+                <h1>AnabasaSoft</h1>
+            </a>
         </div>
         <nav>
-            <a href="https://github.com/AnabasaSoft" class="social-link">GitHub Profile</a>
+            <a href="../index.html#apps">Aplicaciones</a>
+            <a href="https://github.com/AnabasaSoft" target="_blank">GitHub</a>
         </nav>
     </header>
 
-    <div class="container">
+    <main class="app-details">
         <img src="../assets/images/visagevault-icon.png" alt="Icono de VisageVault" class="app-icon">
         <h1>VisageVault</h1>
         <p><strong>VisageVault</strong> es un gestor inteligente de fotos y vídeos que utiliza inteligencia artificial para organizar y clasificar tu contenido multimedia. Permite una organización eficiente por fechas, la detección facial automática y una integración fluida con servicios en la nube como Google Drive, facilitando la gestión de tus recuerdos digitales.</p>
@@ -64,6 +164,10 @@
             <a href="mailto:anabasasoft@gmail.com">Contacto por Correo</a>
         </div>
         <a href="../index.html" class="back-link">← Volver a la página principal</a>
-    </div>
+    </main>
+
+    <footer>
+        © 2025 AnabasaSoft — Code is Law.
+    </footer>
 </body>
 </html>
