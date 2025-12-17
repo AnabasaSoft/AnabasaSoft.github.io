@@ -1,0 +1,195 @@
+
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    
+    <!-- SEO Esencial -->
+    <title>OpenTranscribe - Transcribe Audio a Texto con IA | AnabasaSoft</title>
+    <meta name="description" content="OpenTranscribe es una aplicación de escritorio moderna para transcribir audio a texto utilizando la potencia de Whisper (C++).">
+    <meta name="keywords" content="opentranscribe, anabasasoft, whisper, audio, transcription, ai, cpp, linux">
+    <link rel="canonical" href="https://anabasasoft.github.io/apps/opentranscribe-details.html">
+
+    <!-- Open Graph (para Redes Sociales) -->
+    <meta property="og:title" content="OpenTranscribe - Transcribe Audio a Texto con IA | AnabasaSoft">
+    <meta property="og:description" content="OpenTranscribe es una aplicación de escritorio moderna para transcribir audio a texto utilizando la potencia de Whisper (C++).">
+    <meta property="og:image" content="https://anabasasoft.github.io/assets/images/opentranscribe-icon.png">
+    <meta property="og:url" content="https://anabasasoft.github.io/apps/opentranscribe-details.html">
+    <meta property="og:type" content="website">
+    <meta property="og:site_name" content="AnabasaSoft">
+    <meta property="og:locale" content="es_ES">
+
+    <!-- Twitter Card -->
+    <meta name="twitter:card" content="summary">
+    <meta name="twitter:title" content="OpenTranscribe - Transcribe Audio a Texto con IA | AnabasaSoft">
+    <meta name="twitter:description" content="OpenTranscribe es una aplicación de escritorio moderna para transcribir audio a texto utilizando la potencia de Whisper (C++).">
+    <meta name="twitter:image" content="https://anabasasoft.github.io/assets/images/opentranscribe-icon.png">
+    
+    <link rel="icon" href="../assets/images/anabasasoft-logo.png" type="image/png">
+    <style>
+        :root {
+            --bg: #04070a;
+            --card-bg: #0b0f14;
+            --accent: #00ff9d;
+            --text: #d5ffe9;
+            --highlight: #0affc6;
+            --gradient: linear-gradient(135deg, #00ff9d 0%, #00d0ff 100%);
+        }
+        * { box-sizing: border-box; }
+        body {
+            margin: 0;
+            font-family: "Inter", Arial, sans-serif;
+            background: var(--bg);
+            color: var(--text);
+            letter-spacing: 0.5px;
+        }
+        header {
+            padding: 20px 40px;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            background: rgba(0, 0, 0, 0.45);
+            backdrop-filter: blur(10px);
+            border-bottom: 1px solid rgba(0, 255, 157, 0.2);
+            position: sticky;
+            top: 0;
+            z-index: 20;
+        }
+        header .logo-container {
+            display: flex;
+            align-items: center;
+            gap: 15px;
+        }
+        header .logo-container img {
+            height: 40px;
+        }
+        header h1 {
+            background: var(--gradient);
+            -webkit-background-clip: text;
+            color: transparent;
+            font-size: 1.8rem;
+            margin: 0;
+            font-weight: 700;
+        }
+        nav a {
+            margin-left: 20px;
+            color: var(--text);
+            text-decoration: none;
+            font-weight: 500;
+            transition: 0.3s;
+        }
+        nav a:hover {
+            color: var(--accent);
+        }
+        .app-details {
+            max-width: 900px;
+            margin: 60px auto;
+            padding: 40px;
+            background: var(--card-bg);
+            border-radius: 15px;
+            border: 1px solid rgba(0, 255, 157, 0.15);
+        }
+        .app-details h1 {
+            background: var(--gradient);
+            -webkit-background-clip: text;
+            color: transparent;
+            font-size: 2.5rem;
+            margin-bottom: 1rem;
+        }
+        .app-details h2 {
+            color: var(--highlight);
+            border-bottom: 1px solid var(--accent);
+            padding-bottom: 0.5rem;
+            margin-top: 2rem;
+            margin-bottom: 1rem;
+        }
+        .app-icon {
+            display: block;
+            margin: 0 auto 1.5rem auto;
+            width: 120px;
+            height: 120px;
+            object-fit: contain;
+            border-radius: 20px;
+        }
+        .screenshot {
+            max-width: 100%;
+            margin-bottom: 1em;
+            border-radius: 8px;
+            border: 1px solid rgba(0, 255, 157, 0.2);
+        }
+        .links a {
+            margin-right: 15px;
+            color: var(--accent);
+            text-decoration: none;
+            font-weight: 600;
+            transition: color 0.3s;
+        }
+        .links a:hover { color: var(--highlight); }
+        ul { line-height: 1.8; }
+        .back-link {
+            display: inline-block;
+            margin-top: 2em;
+            color: var(--text);
+            text-decoration: none;
+            border: 1px solid var(--text);
+            padding: 0.7em 1.2em;
+            border-radius: 5px;
+            transition: background-color 0.3s, color 0.3s, border-color 0.3s;
+        }
+        .back-link:hover {
+            background-color: var(--accent);
+            color: var(--bg);
+            border-color: var(--accent);
+        }
+        footer {
+            text-align: center;
+            padding: 30px;
+            opacity: 0.7;
+            font-size: 0.9rem;
+            border-top: 1px solid rgba(0, 255, 157, 0.15);
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <div class="logo-container">
+            <a href="../index.html" style="display: flex; align-items: center; text-decoration: none;">
+                <img src="../assets/images/anabasasoft-logo.png" alt="AnabasaSoft Logo">
+                <h1>AnabasaSoft</h1>
+            </a>
+        </div>
+        <nav>
+            <a href="../index.html#apps">Aplicaciones</a>
+            <a href="https://github.com/AnabasaSoft" target="_blank">GitHub</a>
+        </nav>
+    </header>
+
+    <main class="app-details">
+        <img src="../assets/images/opentranscribe-icon.png" alt="Icono de OpenTranscribe" class="app-icon">
+        <h1>OpenTranscribe</h1>
+        <p><strong>OpenTranscribe</strong> es una aplicación de escritorio moderna y oscura para transcribir audio a texto utilizando la potencia de Whisper (C++).</p>
+        
+        <h2>Características Destacadas</h2>
+        <ul>
+            <li><strong>Transcripción Local y Privada:</strong> Procesa tus archivos de audio directamente en tu ordenador.</li>
+            <li><strong>Alta Precisión:</strong> Utiliza los modelos de Whisper de OpenAI para obtener transcripciones de alta calidad.</li>
+            <li><strong>Soporte para Varios Formatos:</strong> Exporta tus transcripciones a formatos como TXT, SRT o VTT.</li>
+            <li><strong>Interfaz Sencilla:</strong> Una interfaz limpia y fácil de usar para que te centres en tu trabajo.</li>
+        </ul>
+
+        <h2>Capturas de Pantalla</h2>
+        <img src="../assets/images/opentranscribe-capture1.png" alt="Captura de pantalla de OpenTranscribe" class="screenshot">
+
+        <div class="links">
+            <a href="https://github.com/AnabasaSoft/OpenTranscribe" target="_blank">Ver Proyecto en GitHub</a>
+            <a href="mailto:anabasasoft@gmail.com">Contacto por Correo</a>
+        </div>
+        <a href="../index.html" class="back-link">← Volver a la página principal</a>
+    </main>
+
+    <footer>
+        © 2025 AnabasaSoft — Code is Law.
+    </footer>
+</body>
+</html>
