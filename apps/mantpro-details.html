@@ -1,0 +1,307 @@
+<head>
+    <!-- SEO Esencial -->
+    <title>MantPro - Sistema de Mantenimiento Preventivo | AnabasaSoft</title>
+    <meta name="description" content="MantPro: Gestión profesional de mantenimiento preventivo y correctivo para equipos y flotas, desarrollado por AnabasaSoft.">
+    <meta name="keywords" content="MantPro, anabasasoft, mantenimiento preventivo, gestión de flotas, software de mantenimiento">
+    <link rel="canonical" href="https://anabasasoft.github.io/apps/mantpro-details.html">
+
+    <!-- Open Graph (para Redes Sociales) -->
+    <meta property="og:title" content="MantPro - Sistema de Mantenimiento Preventivo | AnabasaSoft">
+    <meta property="og:description" content="MantPro: Gestión profesional de mantenimiento preventivo y correctivo para equipos y flotas, desarrollado por AnabasaSoft.">
+    <meta property="og:image" content="https://anabasasoft.github.io/assets/images/mantpro-logo.png">
+    <meta property="og:url" content="https://anabasasoft.github.io/apps/mantpro-details.html">
+    <meta property="og:type" content="website">
+    <meta property="og:site_name" content="AnabasaSoft">
+    <meta property="og:locale" content="es_ES">
+
+    <!-- Twitter Card -->
+    <meta name="twitter:card" content="summary_large_image">
+    <meta name="twitter:title" content="MantPro - Sistema de Mantenimiento Preventivo | AnabasaSoft">
+    <meta property="twitter:description" content="MantPro: Gestión profesional de mantenimiento preventivo y correctivo para equipos y flotas, desarrollado por AnabasaSoft.">
+    <meta property="twitter:image" content="https://anabasasoft.github.io/assets/images/mantpro-logo.png">
+    
+    <link rel="icon" href="../assets/images/anabasasoft-logo.png" type="image/png">
+    <style>
+        :root {
+            --bg: #04070a;
+            --card-bg: #0b0f14;
+            --accent: #00ff9d;
+            --text: #d5ffe9;
+            --highlight: #0affc6;
+            --gradient: linear-gradient(135deg, #00ff9d 0%, #00d0ff 100%);
+        }
+        * { box-sizing: border-box; }
+        body {
+            margin: 0;
+            font-family: "Inter", Arial, sans-serif;
+            background: var(--bg);
+            color: var(--text);
+            letter-spacing: 0.5px;
+        }
+        header {
+            padding: 20px 40px;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            background: rgba(0, 0, 0, 0.45);
+            backdrop-filter: blur(10px);
+            border-bottom: 1px solid rgba(0, 255, 157, 0.2);
+            position: sticky;
+            top: 0;
+            z-index: 20;
+        }
+        header .logo-container {
+            display: flex;
+            align-items: center;
+            gap: 15px;
+        }
+        header .logo-container img {
+            height: 40px;
+        }
+        header h1 {
+            background: var(--gradient);
+            -webkit-background-clip: text;
+            color: transparent;
+            font-size: 1.8rem;
+            margin: 0;
+            font-weight: 700;
+        }
+        nav a {
+            margin-left: 20px;
+            color: var(--text);
+            text-decoration: none;
+            font-weight: 500;
+            transition: 0.3s;
+        }
+        nav a:hover {
+            color: var(--accent);
+        }
+        .app-details {
+            max-width: 900px;
+            margin: 60px auto;
+            padding: 40px;
+            background: var(--card-bg);
+            border-radius: 15px;
+            border: 1px solid rgba(0, 255, 157, 0.15);
+        }
+        .app-details h1 {
+            background: var(--gradient);
+            -webkit-background-clip: text;
+            color: transparent;
+            font-size: 2.5rem;
+            margin-bottom: 1rem;
+        }
+        .app-details h2 {
+            color: var(--highlight);
+            border-bottom: 1px solid var(--accent);
+            padding-bottom: 0.5rem;
+            margin-top: 2rem;
+            margin-bottom: 1rem;
+        }
+        .app-details h3 {
+            color: var(--accent);
+            font-size: 1.4rem;
+            margin-top: 30px;
+        }
+        .app-icon {
+            display: block;
+            margin: 0 auto 1.5rem auto;
+            width: 150px;
+            height: 150px;
+            object-fit: contain;
+            border-radius: 20px;
+        }
+        .links a {
+            margin-right: 15px;
+            color: var(--accent);
+            text-decoration: none;
+            font-weight: 600;
+            transition: color 0.3s;
+        }
+        .links a:hover { color: var(--highlight); }
+        .back-link {
+            display: inline-block;
+            margin-top: 2em;
+            color: var(--text);
+            text-decoration: none;
+            border: 1px solid var(--text);
+            padding: 0.7em 1.2em;
+            border-radius: 5px;
+            transition: background-color 0.3s, color 0.3s, border-color 0.3s;
+        }
+        .back-link:hover {
+            background-color: var(--accent);
+            color: var(--bg);
+            border-color: var(--accent);
+        }
+        .app-details ul, .app-details ol {
+            padding-left: 20px;
+        }
+        .app-details li {
+            margin-bottom: 10px;
+        }
+        .app-details code {
+            background: rgba(0, 0, 0, 0.3);
+            padding: 3px 6px;
+            border-radius: 5px;
+            font-family: "Courier New", Courier, monospace;
+        }
+        .screenshot {
+            max-width: 100%;
+            margin-bottom: 1em;
+            border-radius: 8px;
+            border: 1px solid rgba(0, 255, 157, 0.2);
+        }
+        .mobile-screenshot {
+            max-width: 50%; /* Half the size of regular screenshot */
+            display: block; /* To center the image if needed */
+            margin: 0 auto 1em auto;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <div class="logo-container">
+            <a href="../index.html" style="display: flex; align-items: center; text-decoration: none;">
+                <img src="../assets/images/anabasasoft-logo.png" alt="AnabasaSoft Logo">
+                <h1>AnabasaSoft</h1>
+            </a>
+        </div>
+        <nav>
+            <a href="../index.html#apps">Aplicaciones</a>
+            <a href="https://github.com/AnabasaSoft" target="_blank">GitHub</a>
+        </nav>
+    </header>
+
+        <main class="app-details">
+            <img src="../assets/images/mantpro-logo.png" alt="Logo de MantPro" class="app-icon">
+            <h1>MantPro</h1>
+            <p>
+                MantPro es un sistema de gestión de mantenimiento preventivo para equipos y flotas, desarrollado por AnabasaSoft.
+            </p>
+    
+            <h2>Características</h2>
+    
+            <h3>Aplicación de Escritorio (PC)</h3>
+            <ul>
+                <li><strong>Calendario Interactivo:</strong> Visualiza y gestiona tareas de mantenimiento con códigos de color.</li>
+                <li><strong>Gestión de Equipos:</strong> Una base de datos completa con información de vehículos/equipos.</li>
+                <li><strong>Gestión de Clientes:</strong> Registro detallado de clientes con datos de contacto y ubicación.</li>
+                <li><strong>Historial Completo:</strong> Registro histórico de todas las intervenciones realizadas.</li>
+                <li><strong>Informes en PDF:</strong> Generación automática de informes profesionales con logos personalizables.</li>
+                <li><strong>Gestión de Imágenes:</strong> Almacenamiento y visualización de fotos de intervención.</li>
+                <li><strong>Sincronización Móvil:</strong> Servidor integrado para sincronización con la app móvil.</li>
+                <li><strong>Sistema de Búsqueda:</strong> Búsqueda avanzada por fechas, etiquetas y contenido.</li>
+                <li><strong>Copia de Seguridad/Restauración:</strong> Exportación e importación de la base de datos completa.</li>
+                <li><strong>Sistema de Etiquetas:</strong> Categorización con etiquetas (Urgente, Eléctrico, Mecánico, Preventivo).</li>
+                <li><strong>Tareas Pendientes:</strong> Gestión de trabajos pendientes y planificación.</li>
+                                <li><strong>Estadísticas:</strong> Análisis de intervenciones por tipo y período.</li>
+            </ul>
+    
+            <h3>Aplicación Móvil (Android/iOS)</h3>
+            <ul>
+                <li><strong>Registro Rápido:</strong> Captura de intervenciones en el lugar.</li>
+                <li><strong>Cámara Integrada:</strong> Toma y edición de fotos con anotaciones.</li>
+                <li><strong>Editor de Imágenes:</strong> Dibuja sobre las fotos para marcar áreas de interés.</li>
+                <li><strong>Sincronización Automática:</strong> Envío automático de datos al PC mediante código QR.</li>
+                <li><strong>Almacenamiento Local:</strong> Guarda los registros sin conexión hasta que se sincronicen.</li>
+                <li><strong>Trabajos Pendientes:</strong> Visualiza y gestiona las tareas asignadas desde el PC.</li>
+                <li><strong>Etiquetas Rápidas:</strong> Sistema rápido de etiquetado con casillas de verificación.</li>
+                <li><strong>Modo Offline:</strong> Trabaja sin conexión y sincroniza cuando esté disponible.</li>
+            </ul>
+    
+            <h2>Requisitos</h2>
+    
+            <h3>Aplicación de Escritorio</h3>
+            <ul>
+                <li><strong>Python:</strong> 3.8 o superior</li>
+                <li><strong>Sistema Operativo:</strong> Windows, Linux o macOS</li>
+                <li><strong>Dependencias de Python:</strong> PyQt6, Flask, ReportLab, qrcode, requests, sqlite3.</li>
+            </ul>
+    
+            <h3>Aplicación Móvil</h3>
+            <ul>
+                <li><strong>Flutter:</strong> 3.0 o superior</li>
+                <li><strong>Dart SDK:</strong> 2.17 o superior</li>
+                <li><strong>Android:</strong> API Level 21+ (Android 5.0+)</li>
+                <li><strong>iOS:</strong> iOS 11.0+ (no probado)</li>
+            </ul>
+    
+            <h2>Instalación</h2>
+    
+            <h3>Aplicación de Escritorio</h3>
+            <ol>
+                <li>Clona el repositorio: <code>git clone https://github.com/AnabasaSoft/MantPro.git</code> y <code>cd MantPro</code>.</li>
+                <li>Crea un entorno virtual: <code>python -m venv venv</code> y actívalo.</li>
+                <li>Instala las dependencias: <code>pip install -r requirements.txt</code>.</li>
+                <li>Ejecuta la aplicación: <code>python main.py</code>.</li>
+            </ol>
+    
+            <h3>Aplicación Móvil</h3>
+            <ol>
+                <li>Navega al directorio móvil: <code>cd mobile_app</code>.</li>
+                <li>Instala las dependencias: <code>flutter pub get</code>.</li>
+                <li>Ejecuta en un dispositivo/emulador: <code>flutter run</code>.</li>
+                <li>Compila el APK (Android): <code>flutter build apk --release</code>.</li>
+                <li>Compila el IPA (iOS): <code>flutter build ios --release</code> (no probado).</li>
+            </ol>
+    
+            <h2>Uso</h2>
+    
+            <h3>Primera Configuración</h3>
+            
+            <h4>Aplicación de Escritorio</h4>
+            <ol>
+                <li>Inicia la aplicación: <code>python main.py</code>.</li>
+                <li>Configura el logo (opcional): Menú > Configuración > Cambiar Logo.</li>
+                <li>Añade equipos: Pestaña "Equipos" > Botón "Añadir Equipo".</li>
+                <li>Añade clientes: Pestaña "Clientes" > Botón "Añadir Cliente".</li>
+                <li>Inicia el servidor: Menú > Servidor > Iniciar Servidor (para sincronización móvil).</li>
+            </ol>
+    
+            <h4>Aplicación Móvil</h4>
+            <ol>
+                <li>Instala la app en tu dispositivo móvil.</li>
+                <li>Conecta con el PC: Asegúrate de que ambos dispositivos están en la misma red WiFi. En el PC: Menú > Servidor > Mostrar QR de Conexión. En el móvil: Toca el icono de QR y escanea el código.</li>
+                <li>Listo: Ahora puedes registrar intervenciones desde el móvil.</li>
+            </ol>
+    
+            <h3>Flujo de Trabajo Típico</h3>
+    
+            <h4>Desde el PC</h4>
+            <ol>
+                <li>Crea una tarea pendiente: Pestaña "Pendientes" > Botón "Añadir Pendiente". Asóciala a un equipo/cliente y genera un QR para el técnico.</li>
+                <li>Revisa los trabajos completados: Los trabajos sincronizados desde el móvil aparecen automáticamente. Revisa las fotos y los detalles en el calendario. Genera un informe en PDF si es necesario.</li>
+                <li>Genera informes: Menú > Exportar > Exportar PDF. Selecciona el rango de fechas y elige si incluir fotos en el informe.</li>
+            </ol>
+    
+            <h4>Desde el Móvil</h4>
+            <ol>
+                <li>Escanea un trabajo pendiente (opcional): Si el PC asignó un trabajo, escanea el QR. La información se cargará automáticamente.</li>
+                <li>Registra una intervención: Toca "Nuevo" o selecciona un trabajo pendiente. Completa el título y los detalles. Toma una foto con la cámara. Dibuja/anota en la foto si es necesario. Selecciona las etiquetas apropiadas. Guarda.</li>
+                <li>Sincroniza: Toca el icono de sincronización. Los registros se envían automáticamente al PC y se eliminan del móvil al enviarse con éxito.</li>
+            </ol>
+    
+            <h2>Sincronización PC-Móvil</h2>
+            <p>MantPro utiliza un sistema de sincronización basado en un servidor Flask integrado en la app de escritorio, códigos QR para una conexión rápida y segura, una API REST para la comunicación y WiFi local.</p>
+    
+                    <h2>Estructura del Proyecto</h2>
+                    <p>El proyecto incluye <code>main.py</code> (app de escritorio), <code>requirements.txt</code>, <code>logo.png</code>, <code>README.md</code>, <code>fotos_mantenimiento/</code>, <code>mantenimiento.db</code> (base de datos SQLite), <code>mobile_app/</code> (app de Flutter), <code>backups/</code>, y <code>docs/</code>.</p>
+            
+                    <h2>Capturas de Pantalla</h2>
+                    <img src="../assets/images/mantpro-capture1.png" alt="Captura de pantalla 1 de MantPro" class="screenshot">
+                    <img src="../assets/images/mantpro-capture2.png" alt="Captura de pantalla 2 de MantPro" class="screenshot">
+                    <img src="../assets/images/mantpro-capture3.jpg" alt="Captura de pantalla 3 de MantPro" class="screenshot mobile-screenshot">
+                    <img src="../assets/images/mantpro-capture4.jpg" alt="Captura de pantalla 4 de MantPro" class="screenshot mobile-screenshot">
+                    
+                    <div class="links">                <a href="https://github.com/AnabasaSoft/MantPro" target="_blank">Ver Proyecto en GitHub</a>
+                <a href="mailto:anabasasoft@gmail.com">Contacto por Correo</a>
+            </div>
+            <a href="../apps.html" class="back-link">← Volver a Aplicaciones</a>
+        </main>
+    
+        <footer>
+            © 2025 AnabasaSoft — Code is Law.
+        </footer>
+    </body>
+    </html>
