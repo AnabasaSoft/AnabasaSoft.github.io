@@ -1,0 +1,202 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    
+    <!-- SEO Esencial -->
+    <title>P2P-Total - Cliente P2P Multired | AnabasaSoft</title>
+    <meta name="description" content="P2P-Total es un cliente de escritorio multiplataforma que unifica cinco de las redes P2P más importantes en una sola aplicación sin dependencias externas.">
+    <meta name="keywords" content="p2p, p2p-total, bittorrent, soulseek, dc++, gnutella, emule, kad, ed2k, pyqt6, python, asyncio, anabasasoft, cliente p2p">
+    <link rel="canonical" href="https://anabasasoft.github.io/apps/p2p-total-details.html">
+
+    <!-- Open Graph (para Redes Sociales) -->
+    <meta property="og:title" content="P2P-Total - Cliente P2P Multired | AnabasaSoft">
+    <meta property="og:description" content="Unifica cinco redes de intercambio de archivos en una sola interfaz con descarga y búsqueda simultánea.">
+    <meta property="og:image" content="https://anabasasoft.github.io/assets/images/p2p-total-icon.png">
+    <meta property="og:url" content="https://anabasasoft.github.io/apps/p2p-total-details.html">
+    <meta property="og:type" content="website">
+    <meta property="og:site_name" content="AnabasaSoft">
+    <meta property="og:locale" content="es_ES">
+
+    <!-- Twitter Card -->
+    <meta name="twitter:card" content="summary">
+    <meta name="twitter:title" content="P2P-Total - Cliente P2P Multired | AnabasaSoft">
+    <meta name="twitter:description" content="Unifica cinco redes de intercambio de archivos en una sola interfaz con descarga y búsqueda simultánea.">
+    <meta name="twitter:image" content="https://anabasasoft.github.io/assets/images/p2p-total-icon.png">
+    
+    <link rel="icon" href="../assets/images/anabasasoft-logo.png" type="image/png">
+    <style>
+        :root {
+            --bg: #04070a;
+            --card-bg: #0b0f14;
+            --accent: #00ff9d;
+            --text: #d5ffe9;
+            --highlight: #0affc6;
+            --gradient: linear-gradient(135deg, #00ff9d 0%, #00d0ff 100%);
+        }
+        * { box-sizing: border-box; }
+        body {
+            margin: 0;
+            font-family: "Inter", Arial, sans-serif;
+            background: var(--bg);
+            color: var(--text);
+            letter-spacing: 0.5px;
+        }
+        header {
+            padding: 20px 40px;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            background: rgba(0, 0, 0, 0.45);
+            backdrop-filter: blur(10px);
+            border-bottom: 1px solid rgba(0, 255, 157, 0.2);
+            position: sticky;
+            top: 0;
+            z-index: 20;
+        }
+        header .logo-container {
+            display: flex;
+            align-items: center;
+            gap: 15px;
+        }
+        header .logo-container img {
+            height: 40px;
+        }
+        header h1 {
+            background: var(--gradient);
+            -webkit-background-clip: text;
+            color: transparent;
+            font-size: 1.8rem;
+            margin: 0;
+            font-weight: 700;
+        }
+        nav a {
+            margin-left: 20px;
+            color: var(--text);
+            text-decoration: none;
+            font-weight: 500;
+            transition: 0.3s;
+        }
+        nav a:hover {
+            color: var(--accent);
+        }
+        .app-details {
+            max-width: 900px;
+            margin: 60px auto;
+            padding: 40px;
+            background: var(--card-bg);
+            border-radius: 15px;
+            border: 1px solid rgba(0, 255, 157, 0.15);
+        }
+        .app-details h1 {
+            background: var(--gradient);
+            -webkit-background-clip: text;
+            color: transparent;
+            font-size: 2.5rem;
+            margin-bottom: 1rem;
+        }
+        .app-details h2 {
+            color: var(--highlight);
+            border-bottom: 1px solid var(--accent);
+            padding-bottom: 0.5rem;
+            margin-top: 2rem;
+            margin-bottom: 1rem;
+        }
+        .app-icon {
+            display: block;
+            margin: 0 auto 1.5rem auto;
+            width: 120px;
+            height: 120px;
+            object-fit: contain;
+            border-radius: 20px;
+        }
+        .screenshot {
+            max-width: 100%;
+            display: block;
+            margin: 1.5rem auto;
+            border-radius: 12px;
+            border: 1px solid rgba(0, 255, 157, 0.2);
+            box-shadow: 0 10px 30px rgba(0,0,0,0.5);
+        }
+        .links a {
+            margin-right: 15px;
+            color: var(--accent);
+            text-decoration: none;
+            font-weight: 600;
+            transition: color 0.3s;
+        }
+        .links a:hover { color: var(--highlight); }
+        ul { line-height: 1.8; }
+        .back-link {
+            display: inline-block;
+            margin-top: 2em;
+            color: var(--text);
+            text-decoration: none;
+            border: 1px solid var(--text);
+            padding: 0.7em 1.2em;
+            border-radius: 5px;
+            transition: background-color 0.3s, color 0.3s, border-color 0.3s;
+        }
+        .back-link:hover {
+            background-color: var(--accent);
+            color: var(--bg);
+            border-color: var(--accent);
+        }
+        footer {
+            text-align: center;
+            padding: 30px;
+            opacity: 0.7;
+            font-size: 0.9rem;
+            border-top: 1px solid rgba(0, 255, 157, 0.15);
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <div class="logo-container">
+            <a href="../index.html" style="display: flex; align-items: center; text-decoration: none;">
+                <img src="../assets/images/anabasasoft-logo.png" alt="AnabasaSoft Logo">
+                <h1>AnabasaSoft</h1>
+            </a>
+        </div>
+        <nav>
+            <a href="../index.html">Inicio</a>
+            <a href="../apps.html">Aplicaciones</a>
+            <a href="../about.html">Nosotros</a>
+            <a href="https://github.com/AnabasaSoft" target="_blank">GitHub</a>
+        </nav>
+    </header>
+
+    <main class="app-details">
+        <img src="../assets/images/p2p-total-icon.png" alt="Icono de P2P-Total" class="app-icon">
+        <h1>P2P-Total</h1>
+        <p><strong>P2P-Total</strong> es un cliente P2P de escritorio multiplataforma (Linux, Windows y macOS) diseñado para integrar cinco de las redes de intercambio de archivos más importantes en una única interfaz unificada y fluida. Todo ello sin dependencias de binarios externos ni clientes secundarios en segundo plano, programado de forma nativa utilizando sockets de Python y la biblioteca de ejecución asíncrona <code>asyncio</code>.</p>
+        
+        <h2>Características Destacadas</h2>
+        <ul>
+            <li><strong>Soporte Multired Real:</strong> Conéctate de forma simultánea a BitTorrent, Soulseek, DC++ (NMDC), Gnutella2 y eMule/Kad (eD2k + Kademlia).</li>
+            <li><strong>Búsqueda Unificada:</strong> Realiza búsquedas simultáneas en las cinco redes de forma transparente, con resultados en tiempo real, eliminación de duplicados y alertas de búsqueda persistentes.</li>
+            <li><strong>Implementación de Protocolos Nativos:</strong> Escrito desde cero en Python mediante sockets y <code>asyncio</code>, sin requerir binarios externos ni lanzar otras aplicaciones de fondo.</li>
+            <li><strong>Gestión Avanzada de Descargas:</strong> Cola de descargas reordenable, categorías con carpetas de destino específicas, descarga secuencial de torrents y límites de velocidad globales y por descarga.</li>
+            <li><strong>Persistencia e Integridad:</strong> Las descargas activas sobreviven a los reinicios de la aplicación, incluyendo verificación de integridad nativa (TTH, SHA1, MD4/AICH y hashes de piezas).</li>
+            <li><strong>Aspectos Sociales e Interfaz Moderna:</strong> Chat integrado para salas de Soulseek, chats de DC++ (hub y privado) y una interfaz moderna construida con PyQt6 que incluye temas claro y oscuro, notificaciones nativas e integración en la bandeja del sistema.</li>
+            <li><strong>Privacidad y Seguridad:</strong> Almacena contraseñas de forma segura en el llavero nativo del sistema operativo (Keyring/Keychain), y soporta proxies SOCKS5/HTTP y ofuscación de protocolo eD2k (RC4).</li>
+            <li><strong>Modo Portable:</strong> Puede ejecutarse directamente desde una unidad USB sin alterar los archivos de configuración del sistema anfitrión.</li>
+        </ul>
+
+        <h2>Capturas de Pantalla</h2>
+        <p><i>Próximamente...</i></p>
+
+        <div class="links">
+            <a href="https://github.com/AnabasaSoft/P2P-Total" target="_blank">Ver Proyecto en GitHub</a>
+            <a href="mailto:anabasasoft@gmail.com">Contacto por Correo</a>
+        </div>
+        <a href="../apps.html" class="back-link">← Volver a la página de aplicaciones</a>
+    </main>
+
+    <footer>
+        © 2025 AnabasaSoft — Code is Law.
+    </footer>
+</body>
+</html>
