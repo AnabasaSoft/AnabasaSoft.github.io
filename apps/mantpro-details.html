@@ -179,122 +179,74 @@
             <img src="../assets/images/mantpro-icon.png" alt="Logo de MantPro" class="app-icon">
             <h1>MantPro</h1>
             <p>
-                MantPro es un sistema de gestión de mantenimiento preventivo para equipos y flotas, desarrollado por AnabasaSoft.
+                MantPro es un CMMS (sistema de gestión de mantenimiento) gratuito y de código abierto para gestionar el mantenimiento preventivo y correctivo de una planta, taller o flota, con aplicación de escritorio y app móvil, desarrollado por AnabasaSoft.
             </p>
-    
+
             <h2>Características</h2>
-    
+
             <h3>Aplicación de Escritorio (PC)</h3>
+            <p>Es el centro de control del sistema: desde el PC se gestionan usuarios, máquinas, historial de intervenciones, stock de almacén e informes, y se sincroniza con las apps móviles.</p>
             <ul>
+                <li><strong>Gestión de Usuarios y Roles:</strong> Login con usuario y contraseña, roles de administrador, técnico y almacén (combinables), alta/baja y restablecimiento de contraseñas.</li>
+                <li><strong>Autoría y Auditoría:</strong> Cada intervención guarda quién la realizó, y un registro de cambios deja constancia de quién edita o borra cada trabajo.</li>
+                <li><strong>Permisos por Registro:</strong> Un técnico solo edita o borra sus propios trabajos; un administrador puede gestionar y reasignar cualquier registro.</li>
+                <li><strong>Sesiones de Dispositivos:</strong> Lista los móviles vinculados a cada usuario y permite revocar sesiones concretas.</li>
+                <li><strong>Temas Visuales:</strong> Modo oscuro, claro o un estilo retro inspirado en Windows 98.</li>
                 <li><strong>Calendario Interactivo:</strong> Visualiza y gestiona tareas de mantenimiento con códigos de color.</li>
-                <li><strong>Gestión de Equipos:</strong> Una base de datos completa con información de vehículos/equipos.</li>
-                <li><strong>Gestión de Clientes:</strong> Registro detallado de clientes con datos de contacto y ubicación.</li>
-                <li><strong>Historial Completo:</strong> Registro histórico de todas las intervenciones realizadas.</li>
-                <li><strong>Informes en PDF:</strong> Generación automática de informes profesionales con logos personalizables.</li>
-                <li><strong>Gestión de Imágenes:</strong> Almacenamiento y visualización de fotos de intervención.</li>
-                <li><strong>Sincronización Móvil:</strong> Servidor integrado para sincronización con la app móvil.</li>
+                <li><strong>Historial Completo:</strong> Registro histórico de todas las intervenciones, con fotos de antes y después.</li>
+                <li><strong>Informes en PDF, CSV y Excel:</strong> Generación de informes con logo personalizable y filtro por técnico.</li>
+                <li><strong>Sincronización Móvil:</strong> Servidor integrado (arranca solo) para sincronizar con las apps móviles vía QR.</li>
                 <li><strong>Sistema de Búsqueda:</strong> Búsqueda avanzada por fechas, etiquetas y contenido.</li>
-                <li><strong>Copia de Seguridad/Restauración:</strong> Exportación e importación de la base de datos completa.</li>
+                <li><strong>Copias de Seguridad:</strong> Backup automático incremental al cerrar la app y backup manual completo, con restauración con barra de progreso.</li>
                 <li><strong>Sistema de Etiquetas:</strong> Categorización con etiquetas (Urgente, Eléctrico, Mecánico, Preventivo).</li>
-                <li><strong>Tareas Pendientes:</strong> Gestión de trabajos pendientes y planificación.</li>
-                                <li><strong>Estadísticas:</strong> Análisis de intervenciones por tipo y período.</li>
+                <li><strong>Tareas Pendientes:</strong> Creación, asignación a un técnico concreto y opción de revertir un trabajo completado por error.</li>
+                <li><strong>Recordatorios:</strong> Avisos de mantenimiento que se repiten automáticamente.</li>
+                <li><strong>Control de Stock de Almacén:</strong> Estanterías, baldas y secciones configurables, fichas de materiales con foto y alertas de stock bajo mínimo.</li>
+                <li><strong>Control de Maquinaria:</strong> Árbol de máquinas y submáquinas con foto, contador de trabajos e histórico vinculado.</li>
             </ul>
-    
-            <h3>Aplicación Móvil (Android/iOS)</h3>
+
+            <h3>Aplicación Móvil MantPro (Android)</h3>
+            <p>Pensada para el técnico sobre el terreno: permite registrar intervenciones al momento, con fotos y notas, y sincronizarlas con el PC en cuanto hay conexión.</p>
             <ul>
-                <li><strong>Registro Rápido:</strong> Captura de intervenciones en el lugar.</li>
+                <li><strong>Acceso con Usuario:</strong> Cada técnico inicia sesión una vez y la sesión queda guardada en el dispositivo.</li>
+                <li><strong>Registro Rápido:</strong> Captura de intervenciones sobre el terreno, firmadas automáticamente con su usuario.</li>
                 <li><strong>Cámara Integrada:</strong> Toma y edición de fotos con anotaciones.</li>
                 <li><strong>Editor de Imágenes:</strong> Dibuja sobre las fotos para marcar áreas de interés.</li>
-                <li><strong>Sincronización Automática:</strong> Envío automático de datos al PC mediante código QR.</li>
+                <li><strong>Sincronización Automática:</strong> Envío automático de datos al PC mediante código QR, con actualización en segundo plano al abrir.</li>
                 <li><strong>Almacenamiento Local:</strong> Guarda los registros sin conexión hasta que se sincronicen.</li>
-                <li><strong>Trabajos Pendientes:</strong> Visualiza y gestiona las tareas asignadas desde el PC.</li>
+                <li><strong>Trabajos Pendientes:</strong> Visualiza y gestiona las tareas asignadas desde el PC, con filtro "Solo míos".</li>
+                <li><strong>Material Usado:</strong> Añade a un trabajo el material de almacén empleado, descontándolo automáticamente del stock.</li>
+                <li><strong>Vincular Máquina:</strong> Selecciona la máquina o submáquina en la que se ha hecho el trabajo.</li>
                 <li><strong>Etiquetas Rápidas:</strong> Sistema rápido de etiquetado con casillas de verificación.</li>
                 <li><strong>Modo Offline:</strong> Trabaja sin conexión y sincroniza cuando esté disponible.</li>
+                <li><strong>Recordatorios Diarios:</strong> Notificación si hay trabajos pendientes sin completar.</li>
             </ul>
-    
-            <h2>Requisitos</h2>
-    
-            <h3>Aplicación de Escritorio</h3>
+
+            <h3>Aplicación Móvil MantPro Stock (Android)</h3>
+            <p>Aplicación independiente para consultar y mover el stock de almacén desde el móvil sin necesidad de la app de trabajos.</p>
             <ul>
-                <li><strong>Python:</strong> 3.8 o superior</li>
-                <li><strong>Sistema Operativo:</strong> Windows, Linux o macOS</li>
-                <li><strong>Dependencias de Python:</strong> PyQt6, Flask, ReportLab, qrcode, requests, sqlite3.</li>
+                <li><strong>Navegación del Almacén:</strong> Árbol de estanterías, baldas y secciones, igual que en el PC.</li>
+                <li><strong>Búsqueda de Materiales:</strong> Por nombre, código, descripción o ubicación.</li>
+                <li><strong>Entradas, Salidas y Traslados:</strong> Registra movimientos de stock con motivo opcional.</li>
+                <li><strong>Aviso Visual de Stock:</strong> Cantidad resaltada en rojo o verde según el mínimo configurado.</li>
+                <li><strong>Modo Offline:</strong> Consulta con la última información sincronizada si no hay conexión.</li>
+                <li><strong>Recordatorio Diario:</strong> Notificación para comprobar la cantidad real de varios materiales al azar.</li>
             </ul>
-    
-            <h3>Aplicación Móvil</h3>
-            <ul>
-                <li><strong>Flutter:</strong> 3.0 o superior</li>
-                <li><strong>Dart SDK:</strong> 2.17 o superior</li>
-                <li><strong>Android:</strong> API Level 21+ (Android 5.0+)</li>
-                <li><strong>iOS:</strong> iOS 11.0+ (no probado)</li>
-            </ul>
-    
-            <h2>Instalación</h2>
-    
-            <h3>Aplicación de Escritorio</h3>
-            <ol>
-                <li>Clona el repositorio: <code>git clone https://github.com/AnabasaSoft/MantPro.git</code> y <code>cd MantPro</code>.</li>
-                <li>Crea un entorno virtual: <code>python -m venv venv</code> y actívalo.</li>
-                <li>Instala las dependencias: <code>pip install -r requirements.txt</code>.</li>
-                <li>Ejecuta la aplicación: <code>python main.py</code>.</li>
-            </ol>
-    
-            <h3>Aplicación Móvil</h3>
-            <ol>
-                <li>Navega al directorio móvil: <code>cd mobile_app</code>.</li>
-                <li>Instala las dependencias: <code>flutter pub get</code>.</li>
-                <li>Ejecuta en un dispositivo/emulador: <code>flutter run</code>.</li>
-                <li>Compila el APK (Android): <code>flutter build apk --release</code>.</li>
-                <li>Compila el IPA (iOS): <code>flutter build ios --release</code> (no probado).</li>
-            </ol>
-    
-            <h2>Uso</h2>
-    
-            <h3>Primera Configuración</h3>
-            
-            <h4>Aplicación de Escritorio</h4>
-            <ol>
-                <li>Inicia la aplicación: <code>python main.py</code>.</li>
-                <li>Configura el logo (opcional): Menú > Configuración > Cambiar Logo.</li>
-                <li>Añade equipos: Pestaña "Equipos" > Botón "Añadir Equipo".</li>
-                <li>Añade clientes: Pestaña "Clientes" > Botón "Añadir Cliente".</li>
-                <li>Inicia el servidor: Menú > Servidor > Iniciar Servidor (para sincronización móvil).</li>
-            </ol>
-    
-            <h4>Aplicación Móvil</h4>
-            <ol>
-                <li>Instala la app en tu dispositivo móvil.</li>
-                <li>Conecta con el PC: Asegúrate de que ambos dispositivos están en la misma red WiFi. En el PC: Menú > Servidor > Mostrar QR de Conexión. En el móvil: Toca el icono de QR y escanea el código.</li>
-                <li>Listo: Ahora puedes registrar intervenciones desde el móvil.</li>
-            </ol>
-    
-            <h3>Flujo de Trabajo Típico</h3>
-    
-            <h4>Desde el PC</h4>
-            <ol>
-                <li>Crea una tarea pendiente: Pestaña "Pendientes" > Botón "Añadir Pendiente". Asóciala a un equipo/cliente y genera un QR para el técnico.</li>
-                <li>Revisa los trabajos completados: Los trabajos sincronizados desde el móvil aparecen automáticamente. Revisa las fotos y los detalles en el calendario. Genera un informe en PDF si es necesario.</li>
-                <li>Genera informes: Menú > Exportar > Exportar PDF. Selecciona el rango de fechas y elige si incluir fotos en el informe.</li>
-            </ol>
-    
-            <h4>Desde el Móvil</h4>
-            <ol>
-                <li>Escanea un trabajo pendiente (opcional): Si el PC asignó un trabajo, escanea el QR. La información se cargará automáticamente.</li>
-                <li>Registra una intervención: Toca "Nuevo" o selecciona un trabajo pendiente. Completa el título y los detalles. Toma una foto con la cámara. Dibuja/anota en la foto si es necesario. Selecciona las etiquetas apropiadas. Guarda.</li>
-                <li>Sincroniza: Toca el icono de sincronización. Los registros se envían automáticamente al PC y se eliminan del móvil al enviarse con éxito.</li>
-            </ol>
-    
-            <h2>Sincronización PC-Móvil</h2>
-            <p>MantPro utiliza un sistema de sincronización basado en un servidor Flask integrado en la app de escritorio, códigos QR para una conexión rápida y segura, una API REST para la comunicación y WiFi local.</p>
-    
-                    <h2>Estructura del Proyecto</h2>
-                    <p>El proyecto incluye <code>main.py</code> (app de escritorio), <code>requirements.txt</code>, <code>logo.png</code>, <code>README.md</code>, <code>fotos_mantenimiento/</code>, <code>mantenimiento.db</code> (base de datos SQLite), <code>mobile_app/</code> (app de Flutter), <code>backups/</code>, y <code>docs/</code>.</p>
-            
+
+            <h2>Cómo Funciona</h2>
+            <p>Cada técnico registra sus intervenciones desde el móvil, en el momento y con fotos de antes y después si hace falta. Todo se sincroniza automáticamente con la aplicación de escritorio, donde queda ordenado por máquina, fecha y persona, listo para consultarlo o generar un informe en PDF. La sincronización usa un código QR para vincular el móvil con el PC y funciona sin necesidad de internet, dentro de la misma red WiFi.</p>
+
+                    <h2>Vídeo de Demostración</h2>
+                    <video src="../assets/images/MantPro/MantPro_Video.webm" poster="../assets/images/MantPro/MantPro_Video_thumb.jpg" controls class="screenshot">
+                        Tu navegador no soporta la reproducción de vídeo.
+                    </video>
+
                     <h2>Capturas de Pantalla</h2>
-                    <img src="../assets/images/mantpro-capture1.png" alt="Captura de pantalla 1 de MantPro" class="screenshot">
-                    <img src="../assets/images/mantpro-capture2.png" alt="Captura de pantalla 2 de MantPro" class="screenshot">
-                    <img src="../assets/images/mantpro-capture3.jpg" alt="Captura de pantalla 3 de MantPro" class="screenshot mobile-screenshot">
-                    <img src="../assets/images/mantpro-capture4.jpg" alt="Captura de pantalla 4 de MantPro" class="screenshot mobile-screenshot">
+                    <img src="../assets/images/MantPro/Dashboard.png" alt="Dashboard de la aplicación de escritorio de MantPro" class="screenshot">
+                    <img src="../assets/images/MantPro/Almacen.png" alt="Gestión de stock de almacén en la aplicación de escritorio de MantPro" class="screenshot">
+                    <img src="../assets/images/MantPro/Dashboard-movil.jpg" alt="Dashboard de la app móvil de MantPro" class="screenshot mobile-screenshot">
+                    <img src="../assets/images/MantPro/Almacen-movil.jpg" alt="Gestión de almacén en la app móvil de MantPro" class="screenshot mobile-screenshot">
+                    <img src="../assets/images/MantPro/Historial-movil.jpg" alt="Historial de intervenciones en la app móvil de MantPro" class="screenshot mobile-screenshot">
                     
                     <div class="links">                <a href="https://github.com/AnabasaSoft/MantPro" target="_blank">Ver Proyecto en GitHub</a>
                 <a href="mailto:anabasasoft@gmail.com">Contacto por Correo</a>
