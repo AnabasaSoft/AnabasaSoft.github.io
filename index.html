@@ -7,14 +7,13 @@
     <!-- SEO Esencial -->
     <title>AnabasaSoft - Soluciones de Programación, IDEs y Modernización de Software</title>
     <meta name="description" content="AnabasaSoft: Especialistas en IDEs para COBOL y modernización de código legacy a Java/Python. Soluciones de seguridad, multimedia y herramientas de programación.">
-    <meta name="keywords" content="anabasasoft, desarrollo de software, CobolWorks, COBOL, IDE, Programación, Java, Python, migración código, seguridad, SentinelX, VisageVault, PortalDrop, Sign & Seal, terminal-ia, ollama-cli">
-    <link rel="canonical" href="https://anabasasoft.github.io/index.html">
+    <link rel="canonical" href="https://anabasasoft.github.io/">
 
     <!-- Open Graph (para Redes Sociales como Facebook, LinkedIn) -->
     <meta property="og:title" content="AnabasaSoft - Desarrollo de Software y Aplicaciones">
     <meta property="og:description" content="Explora el porfolio de aplicaciones de AnabasaSoft, incluyendo herramientas de seguridad, multimedia y productividad.">
     <meta property="og:image" content="https://anabasasoft.github.io/assets/images/anabasasoft-logo.png">
-    <meta property="og:url" content="https://anabasasoft.github.io/index.html">
+    <meta property="og:url" content="https://anabasasoft.github.io/">
     <meta property="og:type" content="website">
     <meta property="og:site_name" content="AnabasaSoft">
     <meta property="og:locale" content="es_ES">
@@ -26,65 +25,27 @@
     <meta name="twitter:image" content="https://anabasasoft.github.io/assets/images/anabasasoft-logo.png">
 
     <link rel="icon" href="assets/images/anabasasoft-logo.png" type="image/png">
-    <style>
-        :root {
-            --bg: #04070a;
-            --card-bg: #0b0f14;
-            --accent: #00ff9d;
-            --text: #d5ffe9;
-            --highlight: #0affc6;
-            --gradient: linear-gradient(135deg, #00ff9d 0%, #00d0ff 100%);
-        }
-        * { box-sizing: border-box; }
+    <script type="application/ld+json">
+{
+    "@context": "https://schema.org",
+    "@type": "Organization",
+    "name": "AnabasaSoft",
+    "url": "https://anabasasoft.github.io/",
+    "logo": "https://anabasasoft.github.io/assets/images/anabasasoft-logo.png",
+    "email": "anabasasoft@gmail.com",
+    "sameAs": [
+        "https://github.com/AnabasaSoft"
+    ]
+}
+    </script>
+        <link rel="stylesheet" href="assets/css/base.css">
+<style>
         html, body {
-            height: 100%; /* Ensure html and body take full height */
+            height: 100%;
         }
         body {
-            margin: 0;
-            font-family: "Inter", Arial, sans-serif;
-            background: var(--bg);
-            color: var(--text);
-            letter-spacing: 0.5px;
-            display: flex; /* Use flexbox for layout */
-            flex-direction: column; /* Stack children vertically */
-        }
-        header {
-            padding: 20px 40px;
             display: flex;
-            justify-content: space-between;
-            align-items: center;
-            background: rgba(0, 0, 0, 0.45);
-            backdrop-filter: blur(10px);
-            border-bottom: 1px solid rgba(0, 255, 157, 0.2);
-            position: sticky;
-            top: 0;
-            z-index: 20;
-        }
-        header .logo-container {
-            display: flex;
-            align-items: center;
-            gap: 15px;
-        }
-        header .logo-container img {
-            height: 40px;
-        }
-        header h1 {
-            background: var(--gradient);
-            -webkit-background-clip: text;
-            color: transparent;
-            font-size: 1.8rem;
-            margin: 0;
-            font-weight: 700;
-        }
-        nav a {
-            margin-left: 20px;
-            color: var(--text);
-            text-decoration: none;
-            font-weight: 500;
-            transition: 0.3s;
-        }
-        nav a:hover {
-            color: var(--accent);
+            flex-direction: column;
         }
 
         .hero {
@@ -97,7 +58,7 @@
             justify-content: center;
             align-items: center;
         }
-        .hero h2 {
+        .hero h1 {
             font-size: 3rem;
             margin-bottom: 10px;
             background: var(--gradient);
@@ -139,7 +100,7 @@
         <div class="logo-container">
             <a href="index.html" style="display: flex; align-items: center; text-decoration: none;">
                 <img src="assets/images/anabasasoft-logo.png" alt="AnabasaSoft Logo">
-                <h1>AnabasaSoft</h1>
+                <p class="brand">AnabasaSoft</p>
             </a>
         </div>
         <nav>
@@ -151,7 +112,7 @@
     </header>
 
     <section class="hero">
-        <h2>Software de Vanguardia</h2>
+        <h1>Software de Vanguardia</h1>
         <p>Desarrollo, innovación y código limpio. Explora mis últimas aplicaciones y proyectos open source.</p>
         <a href="apps.html" class="btn">Ver Proyectos</a>
     </section>
