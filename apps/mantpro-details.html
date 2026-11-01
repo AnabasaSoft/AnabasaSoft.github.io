@@ -120,7 +120,7 @@
                 "name": "AnabasaSoft",
                 "url": "https://anabasasoft.github.io/"
             },
-            "operatingSystem": "Windows, Linux"
+            "operatingSystem": "Windows, Linux, Android"
         },
         {
             "@type": "BreadcrumbList",
@@ -177,22 +177,29 @@
             <h3>Aplicación de Escritorio (PC)</h3>
             <p>Es el centro de control del sistema: desde el PC se gestionan usuarios, máquinas, historial de intervenciones, stock de almacén e informes, y se sincroniza con las apps móviles.</p>
             <ul>
+                <li><strong>Dashboard con KPIs:</strong> Avisos pendientes, tareas por hacer, registros del mes, MTBF y MTTR de toda la planta, y gráficos de máquinas con más trabajos y de averías por mes.</li>
+                <li><strong>Estadísticas por Técnico:</strong> Trabajos de cada técnico por año y mes, averías, preventivos, horas de parada y pendientes asignados, con filtro por tipo y exportación a PDF y Excel.</li>
                 <li><strong>Gestión de Usuarios y Roles:</strong> Login con usuario y contraseña, roles de administrador, técnico y almacén (combinables), alta/baja y restablecimiento de contraseñas.</li>
                 <li><strong>Autoría y Auditoría:</strong> Cada intervención guarda quién la realizó, y un registro de cambios deja constancia de quién edita o borra cada trabajo.</li>
                 <li><strong>Permisos por Registro:</strong> Un técnico solo edita o borra sus propios trabajos; un administrador puede gestionar y reasignar cualquier registro.</li>
-                <li><strong>Sesiones de Dispositivos:</strong> Lista los móviles vinculados a cada usuario y permite revocar sesiones concretas.</li>
-                <li><strong>Temas Visuales:</strong> Modo oscuro, claro o un estilo retro inspirado en Windows 98.</li>
-                <li><strong>Calendario Interactivo:</strong> Visualiza y gestiona tareas de mantenimiento con códigos de color.</li>
-                <li><strong>Historial Completo:</strong> Registro histórico de todas las intervenciones, con fotos de antes y después.</li>
-                <li><strong>Informes en PDF, CSV y Excel:</strong> Generación de informes con logo personalizable y filtro por técnico.</li>
-                <li><strong>Sincronización Móvil:</strong> Servidor integrado (arranca solo) para sincronizar con las apps móviles vía QR.</li>
+                <li><strong>Sesiones de Dispositivos:</strong> Lista los móviles vinculados a cada usuario, indica si están en línea ahora mismo y permite revocar sesiones concretas.</li>
+                <li><strong>Calendario Interactivo:</strong> Visualiza y gestiona tareas de mantenimiento con códigos de color, festivos oficiales según el país o la región, vacaciones y puentes.</li>
+                <li><strong>Historial Completo:</strong> Todas las intervenciones con fotos de antes y después y una colección de fotos adicional por trabajo.</li>
+                <li><strong>Tareas Pendientes:</strong> Con prioridad (de baja a crítica), asignación a un técnico concreto, fotos y opción de revertir un trabajo completado por error.</li>
+                <li><strong>Avisos Recurrentes:</strong> Mantenimientos que se repiten solos y que, si se pasan de fecha, se quedan pendientes o atrasados hasta que se hacen.</li>
+                <li><strong>Control de Maquinaria:</strong> Árbol de máquinas y submáquinas con zona y foto, contador de trabajos por año y mes, e indicadores de fiabilidad por máquina.</li>
+                <li><strong>Repuestos por Máquina:</strong> Qué artículos del almacén lleva cada máquina y cuántos, con su stock y ubicación, y en qué máquinas se usa cada artículo.</li>
+                <li><strong>Etiquetas QR por Máquina:</strong> PDF de etiquetas para pegar en las máquinas; al escanearlas con la app MantPro se abre la ficha de la máquina.</li>
+                <li><strong>Control de Stock de Almacén:</strong> Zonas, estanterías, baldas y secciones configurables, fichas de materiales con foto, historial de movimientos de todo el almacén y alertas de stock bajo mínimo.</li>
+                <li><strong>Aviso de Repetidos:</strong> Avisa al dar de alta una máquina o un artículo si ya existe otro con el mismo código o un nombre muy parecido.</li>
+                <li><strong>Informes en PDF, CSV y Excel:</strong> Historial con logo personalizable, filtro por técnico y colección de fotos; exportación del stock completo o por zona o estantería.</li>
+                <li><strong>Importar desde Excel/CSV:</strong> Máquinas, artículos, avisos y usuarios, con plantilla, vista previa y copia de seguridad previa.</li>
                 <li><strong>Sistema de Búsqueda:</strong> Búsqueda avanzada por fechas, etiquetas y contenido.</li>
                 <li><strong>Copias de Seguridad:</strong> Backup automático incremental al cerrar la app y backup manual completo, con restauración con barra de progreso.</li>
-                <li><strong>Sistema de Etiquetas:</strong> Categorización con etiquetas (Urgente, Eléctrico, Mecánico, Preventivo).</li>
-                <li><strong>Tareas Pendientes:</strong> Creación, asignación a un técnico concreto y opción de revertir un trabajo completado por error.</li>
-                <li><strong>Recordatorios:</strong> Avisos de mantenimiento que se repiten automáticamente.</li>
-                <li><strong>Control de Stock de Almacén:</strong> Estanterías, baldas y secciones configurables, fichas de materiales con foto y alertas de stock bajo mínimo.</li>
-                <li><strong>Control de Maquinaria:</strong> Árbol de máquinas y submáquinas con foto, contador de trabajos e histórico vinculado.</li>
+                <li><strong>Sincronización Móvil:</strong> Servidor integrado (arranca solo) para sincronizar con las apps móviles vía QR, sin necesidad de internet.</li>
+                <li><strong>Instalar las Apps con un QR:</strong> El PC muestra un QR que, escaneado con la cámara del móvil, descarga la última versión de MantPro o MantPro Stock.</li>
+                <li><strong>Ayuda Integrada:</strong> Manual completo con índice y buscador; con F1 se abre en el apartado de la pestaña en la que estás.</li>
+                <li><strong>Siete Idiomas y Tres Temas:</strong> Español, inglés, euskera, catalán, gallego, portugués y francés; modo oscuro, claro o clásico estilo Windows 98.</li>
             </ul>
 
             <h3>Aplicación Móvil MantPro (Android)</h3>
@@ -200,16 +207,17 @@
             <ul>
                 <li><strong>Acceso con Usuario:</strong> Cada técnico inicia sesión una vez y la sesión queda guardada en el dispositivo.</li>
                 <li><strong>Registro Rápido:</strong> Captura de intervenciones sobre el terreno, firmadas automáticamente con su usuario.</li>
-                <li><strong>Cámara Integrada:</strong> Toma y edición de fotos con anotaciones.</li>
-                <li><strong>Editor de Imágenes:</strong> Dibuja sobre las fotos para marcar áreas de interés.</li>
-                <li><strong>Sincronización Automática:</strong> Envío automático de datos al PC mediante código QR, con actualización en segundo plano al abrir.</li>
-                <li><strong>Almacenamiento Local:</strong> Guarda los registros sin conexión hasta que se sincronicen.</li>
+                <li><strong>Fotos y Anotaciones:</strong> Fotos de antes y después, colección de fotos adicional y editor para dibujar sobre ellas y marcar zonas.</li>
+                <li><strong>Escanear la Máquina:</strong> Lee la etiqueta QR de una máquina y abre su ficha sin conexión: sus últimos trabajos, sus repuestos con el stock del almacén y un botón para registrar un trabajo en ella.</li>
                 <li><strong>Trabajos Pendientes:</strong> Visualiza y gestiona las tareas asignadas desde el PC, con filtro "Solo míos".</li>
                 <li><strong>Material Usado:</strong> Añade a un trabajo el material de almacén empleado, descontándolo automáticamente del stock.</li>
                 <li><strong>Vincular Máquina:</strong> Selecciona la máquina o submáquina en la que se ha hecho el trabajo.</li>
                 <li><strong>Etiquetas Rápidas:</strong> Sistema rápido de etiquetado con casillas de verificación.</li>
-                <li><strong>Modo Offline:</strong> Trabaja sin conexión y sincroniza cuando esté disponible.</li>
-                <li><strong>Recordatorios Diarios:</strong> Notificación si hay trabajos pendientes sin completar.</li>
+                <li><strong>100 % Offline:</strong> Todo funciona sin conexión y se envía solo al PC en cuanto vuelve a estar accesible.</li>
+                <li><strong>Conectada en Segundo Plano:</strong> Sigue sincronizando mientras está abierta, aunque uses otra app, con una notificación; al cerrarla del todo deja de gastar batería.</li>
+                <li><strong>Primera Sincronización con Progreso:</strong> Barra de progreso y descarga en paralelo de datos y fotos.</li>
+                <li><strong>Actualizar desde la App:</strong> Cuando hay una versión nueva, la descarga e instala desde el propio aviso, sin pasar por GitHub.</li>
+                <li><strong>Recordatorios Diarios:</strong> Notificación a las 8:00 si hay trabajos pendientes sin completar.</li>
             </ul>
 
             <h3>Aplicación Móvil MantPro Stock (Android)</h3>
@@ -218,8 +226,12 @@
                 <li><strong>Navegación del Almacén:</strong> Árbol de estanterías, baldas y secciones, igual que en el PC.</li>
                 <li><strong>Búsqueda de Materiales:</strong> Por nombre, código, descripción o ubicación.</li>
                 <li><strong>Entradas, Salidas y Traslados:</strong> Registra movimientos de stock con motivo opcional.</li>
+                <li><strong>Se Usa En:</strong> Cada artículo indica en qué máquinas se usa como repuesto y cuántos lleva cada una.</li>
+                <li><strong>Aviso de Repetidos:</strong> Avisa al dar de alta un artículo si ya existe otro con el mismo código o un nombre muy parecido.</li>
                 <li><strong>Aviso Visual de Stock:</strong> Cantidad resaltada en rojo o verde según el mínimo configurado.</li>
-                <li><strong>Modo Offline:</strong> Consulta con la última información sincronizada si no hay conexión.</li>
+                <li><strong>100 % Offline:</strong> Altas, ediciones, entradas y salidas sin conexión, que se envían solas al PC en cuanto vuelve a estar accesible.</li>
+                <li><strong>Conectada en Segundo Plano:</strong> Sigue sincronizando aunque uses otra app; el icono de usuario se pone verde con conexión y rojo sin ella.</li>
+                <li><strong>Actualizar desde la App:</strong> Descarga e instala la nueva versión desde el propio aviso.</li>
                 <li><strong>Recordatorio Diario:</strong> Notificación para comprobar la cantidad real de varios materiales al azar.</li>
             </ul>
 
